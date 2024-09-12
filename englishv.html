@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batch-16 - Your Favorite Videos</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f7f7f7;
+            font-family: 'Varela Round', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .brand img {
+            width: 44px;
+            margin-right: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .videoItemContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .videoItem {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 100%;
+            max-width: 300px;
+            transition: transform 0.3s;
+            position: relative;
+        }
+
+        .videoItem:hover {
+            transform: translateY(-10px);
+        }
+
+        .videoItem video {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .videoInfo {
+            padding: 15px;
+            font-size: 0.9rem;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .videoInfo h3 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .timestamp {
+            color: #666;
+            font-size: 0.8rem;
+        }
+
+        .bottom {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .icons i {
+            margin: 0 10px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .videoItemContainer {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .videoItem {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14MSqx7ti4IM0ktoG10I8C0hXcaLMoeyCCw&s" alt="Logo" /> Video Streaming Website</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Top English Videos</h1>
+        <div class="videoItemContainer">
+            <div class="videoItem">
+                <video controls>
+                    <source src="videos/video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="videoInfo">
+                    <h3>Blinding Lights - The Weeknd</h3>
+                    <span class="timestamp">03:20</span>
+                </div>
+            </div>
+
+            <div class="videoItem">
+                <video controls>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="videoInfo">
+                    <h3>Shape of You - Ed Sheeran</h3>
+                    <span class="timestamp">03:53</span>
+                </div>
+            </div>
+
+            <div class="videoItem">
+                <video controls>
+                    <source src="videos/video3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="videoInfo">
+                    <h3>Uptown Funk - Mark Ronson ft. Bruno Mars</h3>
+                    <span class="timestamp">04:30</span>
+                </div>
+            </div>
+
+            <div class="videoItem">
+                <video controls>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="videoInfo">
+                    <h3>Watermelon Sugar - Harry Styles</h3>
+                    <span class="timestamp">02:54</span>
+                </div>
+            </div>
+
+            <div class="videoItem">
+                <video controls>
+                    <source src="videos/video5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="videoInfo">
+                    <h3>Levitating - Dua Lipa</h3>
+                    <span class="timestamp">03:23</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <p>© 2024 Video Streaming Website</p>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </div>
+</body>
+</html>

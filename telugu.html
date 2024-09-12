@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batch-16 - Your favourite music is here</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            height: 65px;
+            background-color: black;
+            color: white;
+        }
+
+        .brand img {
+            width: 44px;
+            padding: 0 8px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            font-weight: bolder;
+            font-size: 1.3rem;
+        }
+
+        .container {
+            min-height: 72vh;
+            background-color: black;
+            color: white;
+            font-family: 'Varela Round', sans-serif;
+            display: flex;
+            margin: 23px auto;
+            width: 70%;
+            border-radius: 12px;
+            padding: 34px;
+            background-image: url('bg.jpg');
+        }
+
+        .bottom {
+            position: sticky;
+            bottom: 0;
+            height: 130px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .icons {
+            margin-top: 14px;
+        }
+
+        .icons i {
+            cursor: pointer;
+        }
+
+        #myProgressBar {
+            width: 80vw;
+            cursor: pointer;
+        }
+
+        .songItemContainer {
+            margin-top: 74px;
+        }
+
+        .songItem {
+            height: 50px;
+            display: flex;
+            background-color: white;
+            color: black;
+            margin: 12px 0;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 34px;
+        }
+
+        .songItem img {
+            width: 43px;
+            margin: 0 23px;
+            border-radius: 34px;
+        }
+
+        .timestamp {
+            margin: 0 23px;
+        }
+
+        .timestamp i {
+            cursor: pointer;
+        }
+
+        .songInfo {
+            position: absolute;
+            left: 10vw;
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        .songInfo img {
+            opacity: 0;
+            transition: opacity 0.4s ease-in;
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14MSqx7ti4IM0ktoG10I8C0hXcaLMoeyCCw&s" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14MSqx7ti4IM0ktoG10I8C0hXcaLMoeyCCw&s" alt="Spotify" /> Music streaming website</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Best of Tremendous Telugu</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="1" src="https://a10.gaanacdn.com/gn_img/song/81l3Me3rMx/l3Mmv84D3r/size_m_1582636036.jpg" />
+                    <span class="songName">Manasu-mare<br> From -"v"</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">&nbsp&nbsp&nbsp&nbsp&nbsp03:32
+                            <i id="0" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                    <audio controls preload="auto">
+                        <source src="music\[iSongs.info] 02 - Vasthunnaa Vachestunna.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <div class="songItem">
+                    <img alt="2" src="music\s10.jpeg" />
+                    <span class="songName">Arey-rey<br> From happy days</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">&nbsp&nbsp&nbsp&nbsp&nbsp04:57
+                            <i id="1" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                    <audio controls preload="auto">
+                        <source src="music\01 - Arey Rey - SenSongsMp3.co.mp3"" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <div class="songItem">
+                    <img alt="3" src="music\s7.jpeg" />
+                    <span class="songName">Yede Yedeydey<br>From Sakhi</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">&nbsp&nbsp&nbsp&nbsp&nbsp05:46
+                            <i id="2" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                    <audio controls preload="auto">
+                        <source src="music\02 - Yede Yedeydey - SenSongsMp3.co.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <div class="songItem">
+                    <img alt="4" src="music\s8.jpeg" />
+                    <span class="songName">Sirivennala<br>From Shay singh Roy</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">&nbsp&nbsp&nbsp&nbsp&nbsp04:13
+                            <i id="3" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                    <audio controls preload="auto">
+                        <source src="music\3-Sirivennala.mp3"type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <div class="songItem">
+                    <img alt="5" src="music\s11.jpg" />
+                    <span class="songName">Nijanga<br>From -Kotha Bangaru Lokam</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">05:21
+                            <i id="4" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                    <audio controls preload="auto">
+                        <source src="music\[iSongs.info] 02 - Nijanga Nenena.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batch-16 - Your Favorite Music is Here</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            height: 65px;
+            background-color: black;
+            color: white;
+        }
+
+        .brand img {
+            width: 44px;
+            padding: 0 8px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            font-weight: bolder;
+            font-size: 1.3rem;
+        }
+
+        .container {
+            min-height: 72vh;
+            background-color: black;
+            color: white;
+            font-family: 'Varela Round', sans-serif;
+            display: flex;
+            margin: 23px auto;
+            width: 70%;
+            border-radius: 12px;
+            padding: 34px;
+            background-image: url('bg.jpg');
+        }
+
+        .bottom {
+            position: sticky;
+            bottom: 0;
+            height: 130px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .icons {
+            margin-top: 14px;
+        }
+
+        .icons i {
+            cursor: pointer;
+        }
+
+        #myProgressBar {
+            width: 80vw;
+            cursor: pointer;
+        }
+
+        .songItemContainer {
+            margin-top: 74px;
+        }
+
+        .songItem {
+            height: 50px;
+            display: flex;
+            background-color: white;
+            color: black;
+            margin: 12px 0;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 34px;
+        }
+
+        .songItem img {
+            width: 43px;
+            margin: 0 23px;
+            border-radius: 34px;
+        }
+
+        .timestamp {
+            margin: 0 23px;
+        }
+
+        .timestamp i {
+            cursor: pointer;
+        }
+
+        .songInfo {
+            position: absolute;
+            left: 10vw;
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        .songInfo img {
+            opacity: 0;
+            transition: opacity 0.4s ease-in;
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14MSqx7ti4IM0ktoG10I8C0hXcaLMoeyCCw&s" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS14MSqx7ti4IM0ktoG10I8C0hXcaLMoeyCCw&s" alt="Logo" /> Music Streaming Website</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Best of English Songs</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="1" src="https://i.ytimg.com/vi/Vds8ddYXYZY/maxresdefault.jpg" />
+                    <span class="songName">Shape of You<br>By Ed Sheeran</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">&nbsp&nbsp&nbsp&nbsp&nbsp03:53
+                            <i id="0" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                    <audio controls preload="auto">
+                        <source src="music\song1.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <div class="songItem">
+                    <img alt="2" src="https://i1.sndcdn.com/artworks-wLxNpXvbCP51ZObl-GesejA-t500x500.jpg" />
+                    <span class="songName">Blinding Lights<br>By The Weeknd</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">&nbsp&nbsp&nbsp&nbsp&nbsp03:20
+                            <i id="1" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                    <audio controls preload="auto">
+                        <source src="" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <div class="songItem">
+                    <img alt="3" src="https://upload.wikimedia.org/wikipedia/en/a/a7/Mark_Ronson_-_Uptown_Funk_%28feat._Bruno_Mars%29_%28Official_Single_Cover%29.png" />
+                    <span class="songName">Uptown Funk<br>By Mark Ronson ft. Bruno Mars</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">&nbsp&nbsp&nbsp&nbsp&nbsp04:30
+                            <i id="2" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                    <audio controls preload="auto">
+                        <source src="C:\Users\SOWMYA\OneDrive\Desktop\3-1 SOWMYA\HTML IMAGES\song3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <div class="songItem">
+                    <img alt="4" src="https://i.ytimg.com/vi/d28NLh9IT14/maxresdefault.jpg" />
+                    <span class="songName">Levitating<br>By Dua Lipa</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">&nbsp&nbsp&nbsp&nbsp&nbsp03:23
+                            <i id="3" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                    <audio controls preload="auto">
+                        <source src="C:\Users\SOWMYA\OneDrive\Desktop\3-1 SOWMYA\HTML IMAGES\song4.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <div class="songItem">
+                    <img alt="5" src="https://images.genius.com/fad220dc51b6e78496fd3b71780ec2d3.548x548x1.jpg" />
+                    <span class="songName">Watermelon Sugar<br>By Harry Styles</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">&nbsp&nbsp&nbsp&nbsp&nbsp02:54
+                            <i id="4" class="far songItemPlay fa-play-circle"></i>
+                        </span>
+                    </span>
+                    <audio controls preload="auto">
+                        <source src="C:\Users\SOWMYA\OneDrive\Desktop\3-1 SOWMYA\HTML IMAGES\song5.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+</body>
+</html>
